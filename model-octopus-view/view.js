@@ -1,10 +1,7 @@
 var view = {
-  getCatNamesLength : function() {
-    return window.octopus.getCatNames().length;
-  },
   render: function() {
     // Let's loop over the numbers in our array
-    for (let i = 0; i < this.getCatNamesLength(); i++) {
+    for (let i = 0; i < window.octopus.getCatNamesLength(); i++) {
         var button = document.createElement('div');
         button.textContent = window.octopus.getCatNames()[i];
         button.addEventListener("click", function(){window.view.showImage([i])});
@@ -12,17 +9,14 @@ var view = {
         button.classList.add("buttonClass");
         button.setAttribute("id", window.octopus.getCatNames()[i]);
 
-
-        document.getElementById('buttons').appendChild(button);
+        buttons.appendChild(button);
     };
   },
   showImage: function(number) {
-    let image = document.getElementById('image');
     let newImage = document.createElement("img");
     newImage.src = window.octopus.getPictures()[number];
-    console.log(images);
-    console.log(document.getElementById('images'));
-    document.getElementById('images').replaceChild(newImage, image);
+    newImage.id = 'image';
+    images.replaceChild(newImage, image);
   }
 };
 
