@@ -7,7 +7,7 @@ var model = {
       {
         name: 'Miley',
         clickCount: 0,
-        picture: 'https://d11kavc4axrfgm.cloudfront.net/pet_care/wp-content/uploads/2015/09/04194922/kitten-walking-150904.jpg',
+        picture: 'http://kittenrescue.org/wp-content/uploads/2017/03/KittenRescue_KittenCareHandbook.jpg',
       },
       {
         name: 'Moreno',
