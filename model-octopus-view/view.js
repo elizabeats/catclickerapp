@@ -1,4 +1,6 @@
 var view = {
+  image: image,
+
   render: function() {
     // Let's loop over the numbers in our array
     for (let i = 0; i < window.octopus.getCatNamesLength(); i++) {
@@ -13,10 +15,10 @@ var view = {
     };
   },
   showImage: function(number) {
-    let newImage = document.createElement("img");
-    newImage.src = window.octopus.getPictures()[number];
-    newImage.id = 'image';
-    images.replaceChild(newImage, image);
+    let oldImage = this.image;
+    this.image = document.createElement("img");
+    this.image.src = window.octopus.getPictures()[number];
+    images.replaceChild(this.image, oldImage);
   }
 };
 
