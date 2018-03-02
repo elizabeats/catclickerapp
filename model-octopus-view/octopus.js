@@ -14,4 +14,8 @@ var octopus = {
     }
     return pictures;
   },
+
+  getCatNamesLength : function() {
+    return window.octopus.getCatNames().length;
+  },
 };
