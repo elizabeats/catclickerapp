@@ -1,4 +1,4 @@
-var model = {
+export default {
   cats: [
       { name: 'Jonathan',
         clickCount: 0,

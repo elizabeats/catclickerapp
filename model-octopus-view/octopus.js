@@ -1,4 +1,6 @@
-var octopus = {
+import model from './model.js';
+
+export default {
   getCatNames : function(){
     var cats = [];
     for (let i = 0; i < model.cats.length; i++){
@@ -16,15 +18,15 @@ var octopus = {
   },
 
   getCatNamesLength : function() {
-    return window.octopus.getCatNames().length;
+    return this.getCatNames().length;
   },
 
   getCatName : function(index) {
-    return window.model.cats[index].name;
+    return model.cats[index].name;
   },
 
   updateAndReturnClickCount : function(index) {
-    var clickCount = window.model.cats[index].clickCount++;
+    var clickCount = model.cats[index].clickCount++;
     return clickCount;
   },
 };
