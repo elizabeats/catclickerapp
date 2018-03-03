@@ -14,11 +14,28 @@ div.buttonClass {
 }
 
 #image {
-  height: 300px;
   width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.imageContainer {
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
 }
 
 .body {
   background-color: #E4E4E4;
-  height: 300px;
+  font-family: Helvetica!important;
+}
+.text {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+
+}
+
+#timesclicked {
+  height: 50px;
+  background-color: white;
 }

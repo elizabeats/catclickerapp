@@ -18,4 +18,13 @@ var octopus = {
   getCatNamesLength : function() {
     return window.octopus.getCatNames().length;
   },
+
+  getCatName : function(index) {
+    return window.model.cats[index].name;
+  },
+
+  updateAndReturnClickCount : function(index) {
+    var clickCount = window.model.cats[index].clickCount++;
+    return clickCount;
+  },
 };
