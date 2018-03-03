@@ -7,24 +7,26 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table style="background-color:black" width="50%">
-      <tr>
-        <td width="50%">
-          <div style="color:white" id="list">
+    <table class="body">
+      <tr id="hond">
+        <td width="200">
+          <div id="buttons">
           </div>
         </td>
-        <td style="background-color: blue"width="50%">
-          <div id="column">
+        <td style="background-color: white" width="400">
+          <div class="imageContainer"id="images" >
+            <img style="width:auto;"src="" id="image"/>
+          </div>
+          <div width="400" id="timesclicked">
+            <p id="text" class="text"></p>
           </div>
         </td>
       </tr>
     </table>
-
-
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+.buttonClass {
+  border: 1px solid white;
+  background-color: black;
+  height: 30px;
+  color: white;
+}
+
+div.buttonClass {
+  margin: auto;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#image {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.imageContainer {
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
+}
+
+.body {
+  background-color: #E4E4E4;
+  font-family: Helvetica!important;
+}
+.text {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+
+}
+
+#timesclicked {
+  height: 50px;
+  background-color: white;
+}
